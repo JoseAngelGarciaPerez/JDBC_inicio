@@ -17,7 +17,7 @@ public class Cliente {
     private String pais;
     private String codigoPostal;
     private Integer codigoEmpleadoRepVentas; // Puede ser null
-    private BigDecimal limiteCredito; // Para decimal(15,2)
+    private float limiteCredito; // Para decimal(15,2)
 
     // Constructor vacío
     public Cliente() {}
@@ -26,7 +26,7 @@ public class Cliente {
     public Cliente(int codigoCliente, String nombreCliente, String nombreContacto, String apellidoContacto,
                    String telefono, String fax, String lineaDireccion1, String lineaDireccion2,
                    String ciudad, String region, String pais, String codigoPostal,
-                   Integer codigoEmpleadoRepVentas, BigDecimal limiteCredito) {
+                   Integer codigoEmpleadoRepVentas, float limiteCredito) {
         this.codigoCliente = codigoCliente;
         this.nombreCliente = nombreCliente;
         this.nombreContacto = nombreContacto;
@@ -147,11 +147,11 @@ public class Cliente {
         this.codigoEmpleadoRepVentas = codigoEmpleadoRepVentas;
     }
 
-    public BigDecimal getLimiteCredito() {
+    public float getLimiteCredito() {
         return limiteCredito;
     }
 
-    public void setLimiteCredito(BigDecimal limiteCredito) {
+    public void setLimiteCredito(float limiteCredito) {
         this.limiteCredito = limiteCredito;
     }
 }
